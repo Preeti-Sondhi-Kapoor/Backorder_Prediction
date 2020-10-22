@@ -12,11 +12,11 @@ In this project Use, machine learning to predict will product go on backorder or
 
 # Algorithms:- 
 
-XGBoosting algorithm
+Rnadom Forest Classifier
 
 # Steps:-
 
-EDA, insights of data, feature engineering, feature selection, analysis of different algo Deployment: on flask and rest API using pycharm
+EDA, feature engineering, feature selection, analysis of different algo and Deployment: on flask and rest API using pycharm
 Deployment:-on flask as integrating platform on pycharm as tool for integration
 
   
