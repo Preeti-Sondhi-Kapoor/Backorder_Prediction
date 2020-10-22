@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Predict,will product go on backorder?</h1>
+
+    <div class="form">
+        <form action="/predict" method="POST">
+            <input type="number" name="forecast_3_month" id="forecast_3_month" placeholder="forecast_3_month">
+            <input type="number" name="forecast_6_month" id="forecast_6_month" placeholder="forecast_6_month">
+            <input type="number" name="forecast_9_month" id="forecast_9_month" placeholder="forecast_9_month">
+            <input type="number" name="sales_3_month" id="sales_3_month" placeholder="sales_3_month">
+            <input type="number" name="sales_1_month" id="sales_1_month" placeholder="sales_1_month">
+            <input type="number" name="national_inventory" id="national_inventory" placeholder="NATIONAL INVENTORY">
+            <input type="number" name="sales_6_month" id="sales_6_month" placeholder="sales_6_month">
+            <input type="number" name="sales_9_month" id="sales_9_month" placeholder="sales_9_month">
+            <input type="number" name="min_bank" id="min_bank" placeholder="min_bank">
+            <input type="number" name="perf_6_month_avg" id="perf_6_month_avg" placeholder="perf_6_month_avg">
+            <input type="number" name="perf_12_month_avg" id="perf_12_month_avg" placeholder="perf_12_month_avg">
+
+
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</div>
+{% endblock %}
